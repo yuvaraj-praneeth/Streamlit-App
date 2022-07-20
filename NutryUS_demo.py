@@ -35,8 +35,8 @@ if genre == 'Breakfast':
   st.image('https://img.redbull.com/images/c_crop,w_1350,h_900,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2017/06/01/1331859375452_2/tekken-7-heihachi-kazuya.jpg.jpg')
   S6=st.slider('Tekken',0,5,step=1)
   calories_vada = 1
-  st.write('Breakfast Calories = {}'.format(breakfast_calories)) 
   breakfast_calories = S1*calories_idly + S2*calories_dosa + S1*calories_breadtoast + S1*calories_poori + S1*calories_omelt + calories_boiledegg + S1*calories_vada
+  st.write('Breakfast Calories = {}'.format(breakfast_calories)) 
 
 elif genre == 'Lunch':
   st.subheader('Genre:- Romance')

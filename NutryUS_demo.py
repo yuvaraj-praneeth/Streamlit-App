@@ -14,49 +14,90 @@ if genre == 'Breakfast':
   S1=st.slider('Idly Quantity',0,5,step=1)
   calories_idly = 1
   st.write('Dosa')
-  st.image('https://gepig.com/game_cover_460w/297.jpg')
+  #st.image('https://gepig.com/game_cover_460w/297.jpg')
   S2=st.slider('Dosa Quantity',0,5,step=1)
   calories_dosa = 1
   st.write('Breadtoast')
-  st.image('https://images-na.ssl-images-amazon.com/images/I/51-IGGUe5ZL.png')
+  #st.image('https://images-na.ssl-images-amazon.com/images/I/51-IGGUe5ZL.png')
   S3=st.slider('Breadtoast Quantity',0,5,step=1)
   calories_breadtoast = 1
   st.write('Poori')
-  st.image('https://i.ytimg.com/vi/detvL9SECGQ/maxresdefault.jpg')
+  #st.image('https://i.ytimg.com/vi/detvL9SECGQ/maxresdefault.jpg')
   S4=st.slider('Poori Quantity',0,5,step=1)
   calories_poori = 1
   st.write('Omelet and Boiled Egg')
-  st.image('https://img.redbull.com/images/c_crop,w_1350,h_900,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2017/06/01/1331859375452_2/tekken-7-heihachi-kazuya.jpg.jpg')
+  #st.image('https://img.redbull.com/images/c_crop,w_1350,h_900,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2017/06/01/1331859375452_2/tekken-7-heihachi-kazuya.jpg.jpg')
   S5=st.slider('Omelet Quantity',0,5,step=1)
   S6=st.slider('Boiled Egg Quantity', 0,5,step=1)
   calories_omelt = 1
   calories_boiledegg = 1
   st.write('Vada')
-  st.image('https://img.redbull.com/images/c_crop,w_1350,h_900,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2017/06/01/1331859375452_2/tekken-7-heihachi-kazuya.jpg.jpg')
+  #st.image('https://img.redbull.com/images/c_crop,w_1350,h_900,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2017/06/01/1331859375452_2/tekken-7-heihachi-kazuya.jpg.jpg')
   S7=st.slider('Vada Quantity',0,5,step=1)
   calories_vada = 1
   breakfast_calories = S1*calories_idly + S2*calories_dosa + S3*calories_breadtoast + S4*calories_poori + S5*calories_omelt + S6*calories_boiledegg + S7*calories_vada
   st.write('Breakfast Calories = {}'.format(breakfast_calories)) 
 
+# LUNCH SECTION ( To be edited )
+
 elif genre == 'Lunch':
-  st.subheader('Genre:- Romance')
-  st.image('https://www.kolpaper.com/wp-content/uploads/2021/02/Horimiya-Wallpaper-HD.jpg')
-  R1=st.slider('Horimiya',0.0,5.0,step=0.5)
-  st.image('https://wallpapercave.com/wp/wp8650031.jpg')
-  R2=st.slider('Bottom-Tier Character Tomozaki-kun',0.0,5.0,step=0.5)
-  st.image('https://c4.wallpaperflare.com/wallpaper/166/158/478/clannad-clannad-after-story-okazaki-nagisa-okazaki-tomoya-wallpaper-preview.jpg')
-  R3=st.slider('Clannad',0.0,5.0,step=0.5)
-  st.image('https://wallpaperaccess.com/full/619632.jpg')
-  R4=st.slider('Kimi no Na Wa',0.0,5.0,step=0.5)
+  st.write('Idly')
+  st.image('https://mk0geekrobocook3p2m6.kinstacdn.com/wp-content/uploads/2021/03/30_Idly.jpg')
+  S1=st.slider('Idly Quantity',0,5,step=1)
+  calories_idly = 1
+  st.write('Dosa')
+  #st.image('https://gepig.com/game_cover_460w/297.jpg')
+  S2=st.slider('Dosa Quantity',0,5,step=1)
+  calories_dosa = 1
+  st.write('Breadtoast')
+  #st.image('https://images-na.ssl-images-amazon.com/images/I/51-IGGUe5ZL.png')
+  S3=st.slider('Breadtoast Quantity',0,5,step=1)
+  calories_breadtoast = 1
+  st.write('Poori')
+  #st.image('https://i.ytimg.com/vi/detvL9SECGQ/maxresdefault.jpg')
+  S4=st.slider('Poori Quantity',0,5,step=1)
+  calories_poori = 1
+  st.write('Omelet and Boiled Egg')
+  #st.image('https://img.redbull.com/images/c_crop,w_1350,h_900,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2017/06/01/1331859375452_2/tekken-7-heihachi-kazuya.jpg.jpg')
+  S5=st.slider('Omelet Quantity',0,5,step=1)
+  S6=st.slider('Boiled Egg Quantity', 0,5,step=1)
+  calories_omelt = 1
+  calories_boiledegg = 1
+  st.write('Vada')
+  #st.image('https://img.redbull.com/images/c_crop,w_1350,h_900,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2017/06/01/1331859375452_2/tekken-7-heihachi-kazuya.jpg.jpg')
+  S7=st.slider('Vada Quantity',0,5,step=1)
+  calories_vada = 1
+  breakfast_calories = S1*calories_idly + S2*calories_dosa + S3*calories_breadtoast + S4*calories_poori + S5*calories_omelt + S6*calories_boiledegg + S7*calories_vada
+  st.write('Breakfast Calories = {}'.format(breakfast_calories))
+     
+ # DINNER SECTION  (To be edited)
   
 elif genre == 'Dinner':
-  st.subheader('Genre:- Sports')
-  st.image('https://c4.wallpaperflare.com/wallpaper/430/354/442/haikyuu-haikyuu-hinata-shouyou-kageyama-tobio-azumane-asahi-hd-wallpaper-preview.jpg')
-  SP1=st.slider('Haikyuu!',0.0,5.0,step=0.5)
-  st.image('https://wallpaperaccess.com/full/1648578.jpg')
-  SP2=st.slider('Diamond no Ace',0.0,5.0,step=0.5)
-  st.image('https://images2.alphacoders.com/267/267400.jpg')
-  SP3=st.slider('Kuroko no Baske',0.0,5.0,step=0.5)
-  st.image('https://wallpapercave.com/wp/wp9165028.jpg')
-  SP4=st.slider('Burning Kabaddi',0.0,5.0,step=0.5)
-  st.write('**Average Rating of Sports genre** = ', (SP1+SP2+SP3+SP4)/4) 
+  st.write('Idly')
+  st.image('https://mk0geekrobocook3p2m6.kinstacdn.com/wp-content/uploads/2021/03/30_Idly.jpg')
+  S1=st.slider('Idly Quantity',0,5,step=1)
+  calories_idly = 1
+  st.write('Dosa')
+  #st.image('https://gepig.com/game_cover_460w/297.jpg')
+  S2=st.slider('Dosa Quantity',0,5,step=1)
+  calories_dosa = 1
+  st.write('Breadtoast')
+  #st.image('https://images-na.ssl-images-amazon.com/images/I/51-IGGUe5ZL.png')
+  S3=st.slider('Breadtoast Quantity',0,5,step=1)
+  calories_breadtoast = 1
+  st.write('Poori')
+  #st.image('https://i.ytimg.com/vi/detvL9SECGQ/maxresdefault.jpg')
+  S4=st.slider('Poori Quantity',0,5,step=1)
+  calories_poori = 1
+  st.write('Omelet and Boiled Egg')
+  #st.image('https://img.redbull.com/images/c_crop,w_1350,h_900,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2017/06/01/1331859375452_2/tekken-7-heihachi-kazuya.jpg.jpg')
+  S5=st.slider('Omelet Quantity',0,5,step=1)
+  S6=st.slider('Boiled Egg Quantity', 0,5,step=1)
+  calories_omelt = 1
+  calories_boiledegg = 1
+  st.write('Vada')
+  #st.image('https://img.redbull.com/images/c_crop,w_1350,h_900,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2017/06/01/1331859375452_2/tekken-7-heihachi-kazuya.jpg.jpg')
+  S7=st.slider('Vada Quantity',0,5,step=1)
+  calories_vada = 1
+  breakfast_calories = S1*calories_idly + S2*calories_dosa + S3*calories_breadtoast + S4*calories_poori + S5*calories_omelt + S6*calories_boiledegg + S7*calories_vada
+  st.write('Breakfast Calories = {}'.format(breakfast_calories))

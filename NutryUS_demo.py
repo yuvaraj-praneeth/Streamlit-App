@@ -8,20 +8,37 @@ genre = st.sidebar.selectbox(
      ('None','Breakfast','Lunch','Dinner'))
 st.write('**You selected:**', genre)
 if genre == 'Breakfast':
-  st.subheader('Device:- ',genre)
+  #st.subheader('Device:- ',genre)
   st.write('Idly')
   st.image('https://mk0geekrobocook3p2m6.kinstacdn.com/wp-content/uploads/2021/03/30_Idly.jpg')
-  S1=st.slider('Quantity',0.0,5.0,step=0.5)
+  S1=st.slider('Quantity',0.0,5.0,step=1)
+  calories_idly = 1
+  st.write('Dosa')
   st.image('https://gepig.com/game_cover_460w/297.jpg')
-  S2=st.slider('Need for Speed Most Wanted',0.0,5.0,step=0.5)
+  S2=st.slider('Need for Speed Most Wanted',0.0,5.0,step=1)
+  calories_dosa = 1
+  st.write('Breadtoast')
   st.image('https://images-na.ssl-images-amazon.com/images/I/51-IGGUe5ZL.png')
-  S3=st.slider('GTA: Vice City',0.0,5.0,step=0.5)
+  S3=st.slider('GTA: Vice City',0.0,5.0,step=1)
+  calories_breadtoast = 1
+  st.write('Poori')
   st.image('https://i.ytimg.com/vi/detvL9SECGQ/maxresdefault.jpg')
-  S4=st.slider('Mortal Kombat',0.0,5.0,step=0.5)
+  S4=st.slider('Mortal Kombat',0.0,5.0,step=1)
+  calories_poori = 1
+  st.write('Omelet and Boiled Egg')
   st.image('https://img.redbull.com/images/c_crop,w_1350,h_900,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2017/06/01/1331859375452_2/tekken-7-heihachi-kazuya.jpg.jpg')
-  S4=st.slider('Tekken',0.0,5.0,step=0.5)
+  S5=st.slider('Omelet',0.0,5.0,step=1)
+  S6=st.slider('Boiled Egg', 0,5,step=1)
+  calories_omelt = 1
+  calories_boiledegg = 1
+  st.write('Vada')
+  st.image('https://img.redbull.com/images/c_crop,w_1350,h_900,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2017/06/01/1331859375452_2/tekken-7-heihachi-kazuya.jpg.jpg')
+  S6=st.slider('Tekken',0.0,5.0,step=1)
+  calories_vada = 1
+  st.write('Breakfast Calories = {}'.format(breakfast_calories)) 
+  breakfast_calories = S1*calories_idly + S2*calories_dosa + S1*calories_breadtoast + S1*calories_poori + S1*calories_omelt + calories_boiledegg + S1*calories_vada
 
-elif genre == 'Romance':
+elif genre == 'Lunch':
   st.subheader('Genre:- Romance')
   st.image('https://www.kolpaper.com/wp-content/uploads/2021/02/Horimiya-Wallpaper-HD.jpg')
   R1=st.slider('Horimiya',0.0,5.0,step=0.5)
@@ -32,7 +49,7 @@ elif genre == 'Romance':
   st.image('https://wallpaperaccess.com/full/619632.jpg')
   R4=st.slider('Kimi no Na Wa',0.0,5.0,step=0.5)
   
-elif genre == 'Sports':
+elif genre == 'Dinner':
   st.subheader('Genre:- Sports')
   st.image('https://c4.wallpaperflare.com/wallpaper/430/354/442/haikyuu-haikyuu-hinata-shouyou-kageyama-tobio-azumane-asahi-hd-wallpaper-preview.jpg')
   SP1=st.slider('Haikyuu!',0.0,5.0,step=0.5)

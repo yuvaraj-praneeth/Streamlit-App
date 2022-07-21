@@ -52,7 +52,7 @@ if genre == 'Breakfast':
 # LUNCH SECTION ( To be edited )
 
 elif genre == 'Lunch':
-  st.text('Quantity is taken in terms of Bowls)
+  st.text('Quantity is taken in terms of Bowls')
   st.write('Chicken Biryani Bowl')
   #st.image('https://mk0geekrobocook3p2m6.kinstacdn.com/wp-content/uploads/2021/03/30_Idly.jpg')
   S1=st.slider('Biryani Bowl Quantity',0,5,step=1)
@@ -87,7 +87,7 @@ elif genre == 'Lunch':
  # DINNER SECTION  (To be edited)
   
 elif genre == 'Dinner':
-  st.text('Quantity is taken in terms of Bowls)
+  st.text('Quantity is taken in terms of Bowls')
   st.write('Jeera Rice')
   st.image('https://mk0geekrobocook3p2m6.kinstacdn.com/wp-content/uploads/2021/03/30_Idly.jpg')
   S1=st.slider('Jeera Rice Quantity',0,5,step=1)
@@ -123,4 +123,4 @@ elif genre == 'Dinner':
   S8=st.slider('Mutton curry Quantity',0,5,step=1)
   calories_Mutton_curry = 301
   dinner_calories = S1*calories_Jeera + S2*calories_Curd + S3*calories_Naan + S4*calories_Roti + S5*calories_Chapati + S6*calories_Panner_curry + S7*calories_Chicken_curry +S8*Mutton_curry
-  st.write('Breakfast Calories = {}'.format(dinner_calories))
+  st.write('Dinner Calories = {}'.format(dinner_calories))

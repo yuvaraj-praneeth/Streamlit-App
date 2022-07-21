@@ -42,8 +42,8 @@ if genre == 'Breakfast':
   calories_poori = 134
   st.write('Omelet and Boiled Egg')
   st.image('https://cdn.pixabay.com/photo/2015/05/20/16/11/kitchen-775746__340.jpg')
-  st.image('https://www.thespruceeats.com/thmb/XC5U2ZiRJIy89I2PPP8aKuob86w=/3797x2848/smart/filters:no_upscale()/perfect-hard-boiled-eggs-995510-Hero_3-03d1b108d1ca489dad9e1f1d7fdba73f.jpg')
   S5=st.slider('Omelet Quantity',0,5,step=1)
+  st.image('https://www.thespruceeats.com/thmb/XC5U2ZiRJIy89I2PPP8aKuob86w=/3797x2848/smart/filters:no_upscale()/perfect-hard-boiled-eggs-995510-Hero_3-03d1b108d1ca489dad9e1f1d7fdba73f.jpg')
   S6=st.slider('Boiled Egg Quantity', 0,5,step=1)
   calories_omelt = 127
   calories_boiledegg = 77
@@ -63,11 +63,11 @@ elif genre == 'Lunch':
   S1=st.slider('Biryani Bowl Quantity',0,5,step=1)
   calories_Biryani = 389
   st.write('Rice and Dal Bowl')
-  #st.image('https://gepig.com/game_cover_460w/297.jpg')
+  st.image('https://img.freepik.com/premium-photo/south-indian-vada-medu-vada-dal-vadai-plate-bowl-isolated-plain_466689-1580.jpg')
   S2=st.slider('Rice and Dal Bowl Quantity',0,5,step=1)
   calories_Dal = 298
   st.write('Panner Rice Bowl')
-  #st.image('https://images-na.ssl-images-amazon.com/images/I/51-IGGUe5ZL.png')
+  st.image('https://chayanikarestaurant.com/wp-content/uploads/2020/07/paneer-rice-thali.jpg')
   S3=st.slider('Panner Rice Bowl Quantity',0,5,step=1)
   calories_Panner_rice = 380
   st.write('Mutton Rice Bowl')

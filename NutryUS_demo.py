@@ -157,17 +157,17 @@ if bmi > 16.0 and bmi < 18.5:
           st.write(diff)
 elif bmi > 18.5 and bmi < 25:
      cal_2 = 2500
-     if(cal_1 > total_calories):
-          diff = cal_1 - total_calories
+     if(cal_2 > total_calories):
+          diff = cal_2 - total_calories
           st.write(diff)
      else:
-          diff = total_calories - cal_1
+          diff = total_calories - cal_2
           st.write(diff)
 elif bmi > 25 and bmi < 40:
      cal_3 = 2300
      if(cal_1 > total_calories):
-          diff = cal_1 - total_calories
+          diff = cal_3 - total_calories
           st.write(diff)
      else:
-          diff = total_calories - cal_1
+          diff = total_calories - cal_3
           st.write(diff)

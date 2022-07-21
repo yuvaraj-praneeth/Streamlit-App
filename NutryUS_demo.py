@@ -1,4 +1,5 @@
 import streamlit as st
+import math as mt
 st.title('NutryUS')
 st.image('https://image.shutterstock.com/image-photo/best-menu-healthy-body-collage-260nw-1679266360.jpg')
 st.header('Your new diet Dormitory Mother')
@@ -11,14 +12,15 @@ weight = st.number_input('Enter your weight in kg')
 height = st.number_input('Enter your height in m')
 bmi = (weight)/(height**2)
 ### Calories based on bmi
-if bmi > 16.0 and bmi < 18.5:
+if bmi = inf:
+     st.write('Enter correct height and weight details')
+elif bmi > 16.0 and bmi < 18.5:
      st.write('Based on your BMI, you need to consume 3000 Calories per day')
 elif bmi > 18.5 and bmi < 25:
      st.write('Based on your BMI, you need to consume 2500 Calories per day')
 elif bmi > 25 and bmi < 40:
      st.write('Based on your BMI, you need to consume 2300 Calories per day')
-else:
-     st.write('Enter correct height and weight details')
+     
 breakfast_calories, lunch_calories, dinner_calories = 0, 0, 0
 st.write('**You selected:**', genre)
 if genre == 'Breakfast':

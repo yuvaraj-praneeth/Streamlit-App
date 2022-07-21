@@ -29,7 +29,7 @@ if genre == 'Breakfast':
   S1=st.slider('Idly Quantity',0,5,step=1)
   calories_idly = 78
   st.write('Dosa')
-  #st.image('https://gepig.com/game_cover_460w/297.jpg')
+  st.image('https://c.ndtvimg.com/2021-03/ka6tveng_dosa_625x300_16_March_21.jpg')
   S2=st.slider('Dosa Quantity',0,5,step=1)
   calories_dosa = 154
   st.write('Breadtoast')

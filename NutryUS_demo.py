@@ -14,10 +14,13 @@ height = st.slider('Enter your height in m',1.0,2.5,step=0.01)
 bmi = (weight)/(height**2)
 ### Calories based on bmi
 if bmi > 16.0 and bmi < 18.5:
+     cal_1 = 3000
      st.write('Based on your BMI, you need to consume 3000 Calories per day')
 elif bmi > 18.5 and bmi < 25:
+     cal_2 = 2500
      st.write('Based on your BMI, you need to consume 2500 Calories per day')
 elif bmi > 25 and bmi < 40:
+     cal_3 = 2300
      st.write('Based on your BMI, you need to consume 2300 Calories per day')
 else:
      st.write('Input approriate height and weight')
@@ -143,3 +146,28 @@ st.write('Dinner Calories = {}'.format(dinner_calories))
 
 total_calories = breakfast_calories + lunch_calories + dinner_calories
 st.write('Total calories consumed today = {}'.format(total_calories))
+
+if bmi > 16.0 and bmi < 18.5:
+     cal_1 = 3000
+     if(cal_1 > total_calories):
+          diff = cal_1 - total_calories
+          st.write(diff)
+      else:
+          diff = total_calories - cal_1
+          st.write(diff)
+elif bmi > 18.5 and bmi < 25:
+     cal_2 = 2500
+     if(cal_1 > total_calories):
+          diff = cal_1 - total_calories
+          st.write(diff)
+      else:
+          diff = total_calories - cal_1
+          st.write(diff)
+elif bmi > 25 and bmi < 40:
+     cal_3 = 2300
+     if(cal_1 > total_calories):
+          diff = cal_1 - total_calories
+          st.write(diff)
+      else:
+          diff = total_calories - cal_1
+          st.write(diff)

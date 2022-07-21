@@ -33,21 +33,22 @@ if genre == 'Breakfast':
   S2=st.slider('Dosa Quantity',0,5,step=1)
   calories_dosa = 154
   st.write('Breadtoast')
-  st.image('https://media.istockphoto.com/photos/south-indian-food-called-vada-sambar-or-sambar-vada-or-wada-served-picture-id700587448')
+  st.image('https://www.archanaskitchen.com/images/archanaskitchen/BasicRecipes_HOW_TO/Bread_toast_recipe.jpg')
   S3=st.slider('Breadtoast Quantity',0,5,step=1)
   calories_breadtoast = 97
   st.write('Poori')
-  #st.image('https://i.ytimg.com/vi/detvL9SECGQ/maxresdefault.jpg')
+  st.image('https://www.awesomecuisine.com/wp-content/uploads/2020/03/poori-masala-kizhangu.jpg')
   S4=st.slider('Poori Quantity',0,5,step=1)
   calories_poori = 134
   st.write('Omelet and Boiled Egg')
-  #st.image('https://img.redbull.com/images/c_crop,w_1350,h_900,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2017/06/01/1331859375452_2/tekken-7-heihachi-kazuya.jpg.jpg')
+  st.image('https://cdn.pixabay.com/photo/2015/05/20/16/11/kitchen-775746__340.jpg')
+  st.image('https://www.thespruceeats.com/thmb/XC5U2ZiRJIy89I2PPP8aKuob86w=/3797x2848/smart/filters:no_upscale()/perfect-hard-boiled-eggs-995510-Hero_3-03d1b108d1ca489dad9e1f1d7fdba73f.jpg')
   S5=st.slider('Omelet Quantity',0,5,step=1)
   S6=st.slider('Boiled Egg Quantity', 0,5,step=1)
   calories_omelt = 127
   calories_boiledegg = 77
   st.write('Vada')
-  #st.image('https://img.redbull.com/images/c_crop,w_1350,h_900,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2017/06/01/1331859375452_2/tekken-7-heihachi-kazuya.jpg.jpg')
+  st.image('https://image.shutterstock.com/image-photo/vada-medu-vadai-sambar-popular-260nw-400811605.jpg')
   S7=st.slider('Vada Quantity',0,5,step=1)
   calories_vada = 155
   breakfast_calories = S1*calories_idly + S2*calories_dosa + S3*calories_breadtoast + S4*calories_poori + S5*calories_omelt + S6*calories_boiledegg + S7*calories_vada
@@ -58,7 +59,7 @@ if genre == 'Breakfast':
 elif genre == 'Lunch':
   st.text('Quantity is taken in terms of Bowls')
   st.write('Chicken Biryani Bowl')
-  #st.image('https://mk0geekrobocook3p2m6.kinstacdn.com/wp-content/uploads/2021/03/30_Idly.jpg')
+  st.image('https://thumbs.dreamstime.com/b/hyderabadi-chicken-biryani-38473399.jpg')
   S1=st.slider('Biryani Bowl Quantity',0,5,step=1)
   calories_Biryani = 389
   st.write('Rice and Dal Bowl')

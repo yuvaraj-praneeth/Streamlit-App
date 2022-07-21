@@ -25,6 +25,7 @@ else:
 
 st.write('**You selected:**', genre)
 if genre == 'Breakfast':
+  breakfast_calories = 0
   st.write('Idly')
   st.image('https://mk0geekrobocook3p2m6.kinstacdn.com/wp-content/uploads/2021/03/30_Idly.jpg')
   S1=st.slider('Idly Quantity',0,5,step=1)
@@ -52,15 +53,15 @@ if genre == 'Breakfast':
   st.image('https://img.freepik.com/premium-photo/south-indian-vada-medu-vada-dal-vadai-plate-bowl-isolated-plain_466689-1580.jpg')
   S7=st.slider('Vada Quantity',0,5,step=1)
   calories_vada = 155
-  breakfast_calories, lunch_calories, dinner_calories = 0, 0, 0
   breakfast_calories = S1*calories_idly + S2*calories_dosa + S3*calories_breadtoast + S4*calories_poori + S5*calories_omelt + S6*calories_boiledegg + S7*calories_vada
-  calories = []
-  calories.append(breakfast_calories)
+  #calories = []
+  #calories.append(breakfast_calories)
   st.write('Breakfast Calories = {}'.format(breakfast_calories)) 
 
 # LUNCH SECTION ( To be edited )
 
 if genre == 'Lunch':
+  lunch_calories = 0
   st.text('Quantity is taken in terms of Bowls')
   st.write('Chicken Biryani Bowl')
   st.image('https://thumbs.dreamstime.com/b/hyderabadi-chicken-biryani-38473399.jpg')
@@ -90,14 +91,14 @@ if genre == 'Lunch':
   st.image('https://media-cdn.tripadvisor.com/media/photo-s/07/f3/1f/ff/kiva-restaurant.jpg')
   S7=st.slider('Apricot Delight Quantity', 0,5,step=1)
   calories_apricot = 97
-  breakfast_calories, lunch_calories, dinner_calories = 0, 0, 0
   lunch_calories = S1*calories_Biryani + S2*calories_Dal + S3*calories_Panner_rice + S4*calories_Mutton + S5*calories_Grilled_Fish + S6*calories_Soya + S7*calories_apricot
-  calories.append(lunch_calories)
+  #calories.append(lunch_calories)
   st.write('Lunch Calories = {}'.format(lunch_calories))
      
  # DINNER SECTION  (To be edited)
   
 if genre == 'Dinner':
+  dinner_calories = 0
   st.text('Quantity is taken in terms of Bowls')
   st.write('Jeera Rice')
   st.image('https://www.whiskaffair.com/wp-content/uploads/2021/06/Jeera-Rice-2-3-1.jpg')
@@ -133,10 +134,9 @@ if genre == 'Dinner':
   st.image('https://www.whiskaffair.com/wp-content/uploads/2019/04/Punjabi-Mutton-Curry-5.jpg')
   S8=st.slider('Mutton curry Quantity',0,5,step=1)
   calories_Mutton_curry = 301
-  breakfast_calories, lunch_calories, dinner_calories = 0, 0, 0
   dinner_calories = S1*calories_Jeera + S2*calories_Curd + S3*calories_Naan + S4*calories_Roti + S5*calories_Chapati + S6*calories_Panner_curry + S7*calories_Chicken_curry +S8*calories_Mutton_curry
-  calories.append(dinner_calories)
+  #calories.append(dinner_calories)
   st.write('Dinner Calories = {}'.format(dinner_calories))
 
-st.write(calories)
-#st.write('Total calories consumed today = {}'.format(total_calories))
+total_calories = breakfast_calories + lunch_calories + dinner_calories
+st.write('Total calories consumed today = {}'.format(total_calories))

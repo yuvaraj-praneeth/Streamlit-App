@@ -48,7 +48,7 @@ if genre == 'Breakfast':
   calories_omelt = 127
   calories_boiledegg = 77
   st.write('Vada')
-  st.image('https://image.shutterstock.com/image-photo/vada-medu-vadai-sambar-popular-260nw-400811605.jpg')
+  st.image('https://img.freepik.com/premium-photo/south-indian-vada-medu-vada-dal-vadai-plate-bowl-isolated-plain_466689-1580.jpg')
   S7=st.slider('Vada Quantity',0,5,step=1)
   calories_vada = 155
   breakfast_calories = S1*calories_idly + S2*calories_dosa + S3*calories_breadtoast + S4*calories_poori + S5*calories_omelt + S6*calories_boiledegg + S7*calories_vada
@@ -63,7 +63,7 @@ elif genre == 'Lunch':
   S1=st.slider('Biryani Bowl Quantity',0,5,step=1)
   calories_Biryani = 389
   st.write('Rice and Dal Bowl')
-  st.image('https://img.freepik.com/premium-photo/south-indian-vada-medu-vada-dal-vadai-plate-bowl-isolated-plain_466689-1580.jpg')
+  st.image('https://maninio.com/wp-content/uploads/2019/06/DSC_0870.jpg')
   S2=st.slider('Rice and Dal Bowl Quantity',0,5,step=1)
   calories_Dal = 298
   st.write('Panner Rice Bowl')
@@ -75,15 +75,15 @@ elif genre == 'Lunch':
   S4=st.slider('Mutton Rice Bowl Quantity',0,5,step=1)
   calories_Mutton = 388
   st.write('Grilled Fish')
-  #st.image('https://img.redbull.com/images/c_crop,w_1350,h_900,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2017/06/01/1331859375452_2/tekken-7-heihachi-kazuya.jpg.jpg')
+  st.image('https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1650227164000/photosp/481e92a6-964f-4a9a-8f4d-c99a47060bfd/stock-photo-food-blue-plate-restaurant-sauce-fish-rice-closeup-grill-481e92a6-964f-4a9a-8f4d-c99a47060bfd.jpg')
   S5=st.slider('Grilled Fish',0,5,step=1)
   calories_Grilled_Fish = 186
   st.write('Soya Curry with Rice Bowl')
-  #st.image('https://img.redbull.com/images/c_crop,w_1350,h_900,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2017/06/01/1331859375452_2/tekken-7-heihachi-kazuya.jpg.jpg')
+  st.image('https://thumbs.dreamstime.com/b/soyabean-rice-indian-vegetarian-soybean-peas-34588825.jpg')
   S6=st.slider('Soya Curry with Rice Bowl',0,5,step=1)
   calories_Soya = 350
   st.write('Apricot Delight for dessert')
-  #st.image('')
+  st.image('https://media-cdn.tripadvisor.com/media/photo-s/07/f3/1f/ff/kiva-restaurant.jpg')
   S7=st.slider('Apricot Delight Quantity', 0,5,step=1)
   calories_apricot = 97
   lunch_calories = S1*calories_Biryani + S2*calories_Dal + S3*calories_Panner_rice + S4*calories_Mutton + S5*calories_Grilled_Fish + S6*calories_Soya + S7*calories_apricot

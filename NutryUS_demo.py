@@ -18,6 +18,8 @@ elif bmi > 18.5 and bmi < 25:
      st.write('Based on your BMI, you need to consume 2500 Calories per day')
 elif bmi > 25 and bmi < 40:
      st.write('Based on your BMI, you need to consume 2300 Calories per day')
+else:
+     st.write('Input approriate height and weight')
      
 breakfast_calories, lunch_calories, dinner_calories = 0, 0, 0
 st.write('**You selected:**', genre)

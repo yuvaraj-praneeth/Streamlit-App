@@ -12,7 +12,7 @@ weight = st.number_input('Enter your weight in kg')
 height = st.number_input('Enter your height in m')
 bmi = (weight)/(height**2)
 ### Calories based on bmi
-if bmi = inf:
+if bmi == inf:
      st.write('Enter correct height and weight details')
 elif bmi > 16.0 and bmi < 18.5:
      st.write('Based on your BMI, you need to consume 3000 Calories per day')

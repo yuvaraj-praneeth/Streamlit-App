@@ -21,7 +21,7 @@ elif bmi > 25 and bmi < 40:
 else:
      st.write('Input approriate height and weight')
      
-breakfast_calories, lunch_calories, dinner_calories = 0, 0, 0
+#breakfast_calories, lunch_calories, dinner_calories = 0, 0, 0
 st.write('**You selected:**', genre)
 if genre == 'Breakfast':
   st.write('Idly')

@@ -14,14 +14,15 @@ bmi = (weight)/(height**2)
 ### Calories based on bmi
 if bmi > 16.0 and bmi < 18.5:
      st.write('Based on your BMI, you need to consume 3000 Calories per day')
-if bmi > 18.5 and bmi < 25:
+elif bmi > 18.5 and bmi < 25:
      st.write('Based on your BMI, you need to consume 2500 Calories per day')
-if bmi > 25 and bmi < 40:
+elif bmi > 25 and bmi < 40:
      st.write('Based on your BMI, you need to consume 2300 Calories per day')
 else:
      st.write('Input approriate height and weight')
-     
+calories = []     
 breakfast_calories, lunch_calories, dinner_calories = 0, 0, 0
+
 st.write('**You selected:**', genre)
 if genre == 'Breakfast':
   st.write('Idly')
@@ -52,11 +53,12 @@ if genre == 'Breakfast':
   S7=st.slider('Vada Quantity',0,5,step=1)
   calories_vada = 155
   breakfast_calories = S1*calories_idly + S2*calories_dosa + S3*calories_breadtoast + S4*calories_poori + S5*calories_omelt + S6*calories_boiledegg + S7*calories_vada
+  calories.append(breakfast_calories)
   st.write('Breakfast Calories = {}'.format(breakfast_calories)) 
 
 # LUNCH SECTION ( To be edited )
 
-elif genre == 'Lunch':
+if genre == 'Lunch':
   st.text('Quantity is taken in terms of Bowls')
   st.write('Chicken Biryani Bowl')
   st.image('https://thumbs.dreamstime.com/b/hyderabadi-chicken-biryani-38473399.jpg')
@@ -87,11 +89,12 @@ elif genre == 'Lunch':
   S7=st.slider('Apricot Delight Quantity', 0,5,step=1)
   calories_apricot = 97
   lunch_calories = S1*calories_Biryani + S2*calories_Dal + S3*calories_Panner_rice + S4*calories_Mutton + S5*calories_Grilled_Fish + S6*calories_Soya + S7*calories_apricot
+  calories.append(lunch_calories)
   st.write('Lunch Calories = {}'.format(lunch_calories))
      
  # DINNER SECTION  (To be edited)
   
-elif genre == 'Dinner':
+if genre == 'Dinner':
   st.text('Quantity is taken in terms of Bowls')
   st.write('Jeera Rice')
   st.image('https://www.whiskaffair.com/wp-content/uploads/2021/06/Jeera-Rice-2-3-1.jpg')
@@ -128,7 +131,8 @@ elif genre == 'Dinner':
   S8=st.slider('Mutton curry Quantity',0,5,step=1)
   calories_Mutton_curry = 301
   dinner_calories = S1*calories_Jeera + S2*calories_Curd + S3*calories_Naan + S4*calories_Roti + S5*calories_Chapati + S6*calories_Panner_curry + S7*calories_Chicken_curry +S8*calories_Mutton_curry
+  calories.append(dinner_calories)
   st.write('Dinner Calories = {}'.format(dinner_calories))
 
-total_calories = breakfast_calories + lunch_calories + dinner_calories
+print(calories)
 st.write('Total calories consumed today = {}'.format(total_calories))

@@ -3,8 +3,9 @@ import math as mt
 st.title('NutryUS')
 st.image('https://www.fredhutch.org/content/dam/www/research/divisions/public-health-sciences/nutrition-assessment/nutrition-dietary-data-gfb-2.jpg')
 st.header('Your new diet Dormitory Mother')
-st.write("**Open the sidebar the type of meal on your left top corner to select **")
-genre = st.sidebar.selectbox(
+st.text('Select your meal')
+#st.write("**Open the sidebar the type of meal on your left top corner to select **")
+#genre = st.sidebar.selectbox(
      "Meal:",
      ('None','Breakfast','Lunch','Dinner'))
 ### Calculating BMI of a person
@@ -20,8 +21,7 @@ elif bmi > 25 and bmi < 40:
      st.write('Based on your BMI, you need to consume 2300 Calories per day')
 else:
      st.write('Input approriate height and weight')
-calories = []     
-breakfast_calories, lunch_calories, dinner_calories = 0, 0, 0
+     
 
 st.write('**You selected:**', genre)
 if genre == 'Breakfast':
@@ -52,7 +52,9 @@ if genre == 'Breakfast':
   st.image('https://img.freepik.com/premium-photo/south-indian-vada-medu-vada-dal-vadai-plate-bowl-isolated-plain_466689-1580.jpg')
   S7=st.slider('Vada Quantity',0,5,step=1)
   calories_vada = 155
+  breakfast_calories, lunch_calories, dinner_calories = 0, 0, 0
   breakfast_calories = S1*calories_idly + S2*calories_dosa + S3*calories_breadtoast + S4*calories_poori + S5*calories_omelt + S6*calories_boiledegg + S7*calories_vada
+  calories = []
   calories.append(breakfast_calories)
   st.write('Breakfast Calories = {}'.format(breakfast_calories)) 
 
@@ -88,6 +90,7 @@ if genre == 'Lunch':
   st.image('https://media-cdn.tripadvisor.com/media/photo-s/07/f3/1f/ff/kiva-restaurant.jpg')
   S7=st.slider('Apricot Delight Quantity', 0,5,step=1)
   calories_apricot = 97
+  breakfast_calories, lunch_calories, dinner_calories = 0, 0, 0
   lunch_calories = S1*calories_Biryani + S2*calories_Dal + S3*calories_Panner_rice + S4*calories_Mutton + S5*calories_Grilled_Fish + S6*calories_Soya + S7*calories_apricot
   calories.append(lunch_calories)
   st.write('Lunch Calories = {}'.format(lunch_calories))
@@ -130,6 +133,7 @@ if genre == 'Dinner':
   st.image('https://www.whiskaffair.com/wp-content/uploads/2019/04/Punjabi-Mutton-Curry-5.jpg')
   S8=st.slider('Mutton curry Quantity',0,5,step=1)
   calories_Mutton_curry = 301
+  breakfast_calories, lunch_calories, dinner_calories = 0, 0, 0
   dinner_calories = S1*calories_Jeera + S2*calories_Curd + S3*calories_Naan + S4*calories_Roti + S5*calories_Chapati + S6*calories_Panner_curry + S7*calories_Chicken_curry +S8*calories_Mutton_curry
   calories.append(dinner_calories)
   st.write('Dinner Calories = {}'.format(dinner_calories))

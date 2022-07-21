@@ -12,9 +12,7 @@ weight = st.slider('Enter your weight in kg',1.0,150.0,step=0.1)
 height = st.slider('Enter your height in m',1.0,2.5,step=0.01)
 bmi = (weight)/(height**2)
 ### Calories based on bmi
-if bmi == inf:
-     st.write('Enter correct height and weight details')
-elif bmi > 16.0 and bmi < 18.5:
+if bmi > 16.0 and bmi < 18.5:
      st.write('Based on your BMI, you need to consume 3000 Calories per day')
 elif bmi > 18.5 and bmi < 25:
      st.write('Based on your BMI, you need to consume 2500 Calories per day')

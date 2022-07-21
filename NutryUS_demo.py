@@ -17,6 +17,8 @@ elif bmi > 18.5 and bmi < 25:
      st.write('Based on your BMI, you need to consume 2500 Calories per day')
 elif bmi > 25 and bmi < 40:
      st.write('Based on your BMI, you need to consume 2300 Calories per day')
+else:
+     st.write('Enter correct height and weight details')
 breakfast_calories, lunch_calories, dinner_calories = 0, 0, 0
 st.write('**You selected:**', genre)
 if genre == 'Breakfast':
@@ -81,7 +83,7 @@ elif genre == 'Lunch':
   #st.image('')
   S7=st.slider('Apricot Delight Quantity', 0,5,step=1)
   calories_apricot = 97
-  lunch_calories = S1*calories_Biryani + S2*calories_Dal + S3*calories_Panner + S4*calories_Mutton + S5*calories_Grilled_Fish + S6*calories_Soya + S7*calories_apricot
+  lunch_calories = S1*calories_Biryani + S2*calories_Dal + S3*calories_Panner_rice + S4*calories_Mutton + S5*calories_Grilled_Fish + S6*calories_Soya + S7*calories_apricot
   st.write('Lunch Calories = {}'.format(lunch_calories))
      
  # DINNER SECTION  (To be edited)
@@ -122,5 +124,5 @@ elif genre == 'Dinner':
   #st.image('https://img.redbull.com/images/c_crop,w_1350,h_900,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2017/06/01/1331859375452_2/tekken-7-heihachi-kazuya.jpg.jpg')
   S8=st.slider('Mutton curry Quantity',0,5,step=1)
   calories_Mutton_curry = 301
-  dinner_calories = S1*calories_Jeera + S2*calories_Curd + S3*calories_Naan + S4*calories_Roti + S5*calories_Chapati + S6*calories_Panner_curry + S7*calories_Chicken_curry +S8*Mutton_curry
+  dinner_calories = S1*calories_Jeera + S2*calories_Curd + S3*calories_Naan + S4*calories_Roti + S5*calories_Chapati + S6*calories_Panner_curry + S7*calories_Chicken_curry +S8*calories_Mutton_curry
   st.write('Dinner Calories = {}'.format(dinner_calories))

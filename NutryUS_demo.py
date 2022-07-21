@@ -52,7 +52,7 @@ if genre == 'Breakfast':
 # LUNCH SECTION ( To be edited )
 
 elif genre == 'Lunch':
-  st.subheader('Quantity is taken in terms of Bowls)
+  st.text('Quantity is taken in terms of Bowls)
   st.write('Chicken Biryani Bowl')
   #st.image('https://mk0geekrobocook3p2m6.kinstacdn.com/wp-content/uploads/2021/03/30_Idly.jpg')
   S1=st.slider('Biryani Bowl Quantity',0,5,step=1)
@@ -87,7 +87,7 @@ elif genre == 'Lunch':
  # DINNER SECTION  (To be edited)
   
 elif genre == 'Dinner':
-  st.subheader('Quantity is taken in terms of Bowls)
+  st.text('Quantity is taken in terms of Bowls)
   st.write('Jeera Rice')
   st.image('https://mk0geekrobocook3p2m6.kinstacdn.com/wp-content/uploads/2021/03/30_Idly.jpg')
   S1=st.slider('Jeera Rice Quantity',0,5,step=1)

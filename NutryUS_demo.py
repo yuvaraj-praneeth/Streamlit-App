@@ -33,7 +33,7 @@ if genre == 'Breakfast':
   S2=st.slider('Dosa Quantity',0,5,step=1)
   calories_dosa = 154
   st.write('Breadtoast')
-  #st.image('https://images-na.ssl-images-amazon.com/images/I/51-IGGUe5ZL.png')
+  st.image('https://media.istockphoto.com/photos/south-indian-food-called-vada-sambar-or-sambar-vada-or-wada-served-picture-id700587448')
   S3=st.slider('Breadtoast Quantity',0,5,step=1)
   calories_breadtoast = 97
   st.write('Poori')

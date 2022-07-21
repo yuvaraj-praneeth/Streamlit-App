@@ -28,7 +28,7 @@ else:
 breakfast_calories, lunch_calories, dinner_calories = 0, 0, 0
 #st.write('**You selected:**', genre)
 #if genre == 'Breakfast':
-st.write('Breakfast Inputs')
+st.title('BREAKFAST SECTION')
 breakfast_calories = 0
 st.write('Idly')
 st.image('https://mk0geekrobocook3p2m6.kinstacdn.com/wp-content/uploads/2021/03/30_Idly.jpg')
@@ -65,7 +65,7 @@ st.write('Breakfast Calories = {}'.format(breakfast_calories))
 # LUNCH SECTION ( To be edited )
 
 #if genre == 'Lunch':
-st.write('Lunch Inputs')
+st.title('LUNCH SECTION')
 lunch_calories = 0
 st.text('Quantity is taken in terms of Bowls')
 st.write('Chicken Biryani Bowl')
@@ -103,7 +103,7 @@ st.write('Lunch Calories = {}'.format(lunch_calories))
  # DINNER SECTION  (To be edited)
   
 #if genre == 'Dinner':
-st.write('Dinner Inputs')
+st.title('DINNER SECTION')
 dinner_calories = 0
 st.text('Quantity is taken in terms of Bowls')
 st.write('Jeera Rice')
@@ -151,23 +151,29 @@ if bmi > 16.0 and bmi < 18.5:
      cal_1 = 3000
      if(cal_1 > total_calories):
           diff = cal_1 - total_calories
+          st.write('Calories left to be consumed: ')
           st.write(diff)
      else:
           diff = total_calories - cal_1
+          st.write('Extra calories taken: ')
           st.write(diff)
 elif bmi > 18.5 and bmi < 25:
      cal_2 = 2500
      if(cal_2 > total_calories):
           diff = cal_2 - total_calories
+          st.write('Calories left to be consumed: ')
           st.write(diff)
      else:
           diff = total_calories - cal_2
+          st.write('Extra calories taken: ')
           st.write(diff)
 elif bmi > 25 and bmi < 40:
      cal_3 = 2300
      if(cal_3 > total_calories):
           diff = cal_3 - total_calories
+          st.write('Calories left to be consumed: ')
           st.write(diff)
      else:
           diff = total_calories - cal_3
+          st.write('Extra calories taken: ')
           st.write(diff)

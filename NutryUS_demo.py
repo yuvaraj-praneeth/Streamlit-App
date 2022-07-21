@@ -1,7 +1,7 @@
 import streamlit as st
 import math as mt
 st.title('NutryUS')
-st.image('https://image.shutterstock.com/image-photo/best-menu-healthy-body-collage-260nw-1679266360.jpg')
+st.image('https://www.fredhutch.org/content/dam/www/research/divisions/public-health-sciences/nutrition-assessment/nutrition-dietary-data-gfb-2.jpg')
 st.header('Your new diet Dormitory Mother')
 st.write("**Open the sidebar the type of meal on your left top corner to select **")
 genre = st.sidebar.selectbox(
@@ -14,14 +14,14 @@ bmi = (weight)/(height**2)
 ### Calories based on bmi
 if bmi > 16.0 and bmi < 18.5:
      st.write('Based on your BMI, you need to consume 3000 Calories per day')
-elif bmi > 18.5 and bmi < 25:
+if bmi > 18.5 and bmi < 25:
      st.write('Based on your BMI, you need to consume 2500 Calories per day')
-elif bmi > 25 and bmi < 40:
+if bmi > 25 and bmi < 40:
      st.write('Based on your BMI, you need to consume 2300 Calories per day')
 else:
      st.write('Input approriate height and weight')
      
-#breakfast_calories, lunch_calories, dinner_calories = 0, 0, 0
+breakfast_calories, lunch_calories, dinner_calories = 0, 0, 0
 st.write('**You selected:**', genre)
 if genre == 'Breakfast':
   st.write('Idly')
@@ -71,7 +71,7 @@ elif genre == 'Lunch':
   S3=st.slider('Panner Rice Bowl Quantity',0,5,step=1)
   calories_Panner_rice = 380
   st.write('Mutton Rice Bowl')
-  #st.image('https://i.ytimg.com/vi/detvL9SECGQ/maxresdefault.jpg')
+  st.image('https://upload.wikimedia.org/wikipedia/commons/c/ca/Mutton_Curry_with_Rice.jpg')
   S4=st.slider('Mutton Rice Bowl Quantity',0,5,step=1)
   calories_Mutton = 388
   st.write('Grilled Fish')
@@ -94,37 +94,37 @@ elif genre == 'Lunch':
 elif genre == 'Dinner':
   st.text('Quantity is taken in terms of Bowls')
   st.write('Jeera Rice')
-  st.image('https://mk0geekrobocook3p2m6.kinstacdn.com/wp-content/uploads/2021/03/30_Idly.jpg')
+  st.image('https://www.whiskaffair.com/wp-content/uploads/2021/06/Jeera-Rice-2-3-1.jpg')
   S1=st.slider('Jeera Rice Quantity',0,5,step=1)
   calories_Jeera = 296
   st.write('Curd Rice')
-  #st.image('https://gepig.com/game_cover_460w/297.jpg')
+  st.image('https://www.vegrecipesofindia.com/wp-content/uploads/2016/07/curd-rice-2.jpg')
   S2=st.slider('Curd Rice Quantity',0,5,step=1)
   calories_Curd = 283
   st.write('Butter Naan')
-  #st.image('https://images-na.ssl-images-amazon.com/images/I/51-IGGUe5ZL.png')
+  st.image('https://indianvegrecipe.com/wp-content/uploads/2019/06/butter-naan-recipe.jpg')
   S3=st.slider('Butter Naan Quantity',0,5,step=1)
   calories_Naan = 271
   st.write('Roti')
-  #st.image('https://i.ytimg.com/vi/detvL9SECGQ/maxresdefault.jpg')
+  st.image('https://www.vegrecipesofindia.com/wp-content/uploads/2015/04/tandoori-roti-recipe-1.jpg')
   S4=st.slider('Roti Quantity',0,5,step=1)
   calories_Roti = 150
   st.write('Chapati')
-  #st.image('https://img.redbull.com/images/c_crop,w_1350,h_900,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2017/06/01/1331859375452_2/tekken-7-heihachi-kazuya.jpg.jpg')
+  st.image('https://img.onmanorama.com/content/dam/mm/en/food/features/images/2021/1/6/chapathi.jpg')
   S5=st.slider('Chapati Quantity',0,5,step=1)
   #S6=st.slider('Boiled Egg Quantity', 0,5,step=1)
   calories_Chapati = 85
   #calories_boiledegg = 1
   st.write('Panner curry')
-  #st.image('https://img.redbull.com/images/c_crop,w_1350,h_900,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2017/06/01/1331859375452_2/tekken-7-heihachi-kazuya.jpg.jpg')
+  st.image('https://www.whiskaffair.com/wp-content/uploads/2019/05/Paneer-Masala-1-3.jpg')
   S6=st.slider('Panner curry Quantity',0,5,step=1)
   calories_Panner_curry = 205
   st.write('Chicken curry')
-  #st.image('https://img.redbull.com/images/c_crop,w_1350,h_900,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2017/06/01/1331859375452_2/tekken-7-heihachi-kazuya.jpg.jpg')
+  st.image('https://static.onecms.io/wp-content/uploads/sites/9/2021/03/10/spicy-chicken-curry-FT-RECIPE0321.jpg')
   S7=st.slider('Chicken curry Quantity',0,5,step=1)
   calories_Chicken_curry = 271
   st.write('Mutton curry')
-  #st.image('https://img.redbull.com/images/c_crop,w_1350,h_900,x_0,y_0,f_auto,q_auto/c_scale,w_1500/redbullcom/2017/06/01/1331859375452_2/tekken-7-heihachi-kazuya.jpg.jpg')
+  st.image('https://www.whiskaffair.com/wp-content/uploads/2019/04/Punjabi-Mutton-Curry-5.jpg')
   S8=st.slider('Mutton curry Quantity',0,5,step=1)
   calories_Mutton_curry = 301
   dinner_calories = S1*calories_Jeera + S2*calories_Curd + S3*calories_Naan + S4*calories_Roti + S5*calories_Chapati + S6*calories_Panner_curry + S7*calories_Chicken_curry +S8*calories_Mutton_curry

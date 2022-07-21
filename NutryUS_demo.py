@@ -78,7 +78,7 @@ elif genre == 'Lunch':
   S6=st.slider('Soya Curry with Rice Bowl',0,5,step=1)
   calories_Soya = 350
   st.write('Apricot Delight for dessert')
-  st.image('')
+  #st.image('')
   S7=st.slider('Apricot Delight Quantity', 0,5,step=1)
   calories_apricot = 97
   lunch_calories = S1*calories_Biryani + S2*calories_Dal + S3*calories_Panner + S4*calories_Mutton + S5*calories_Grilled_Fish + S6*calories_Soya + S7*calories_apricot

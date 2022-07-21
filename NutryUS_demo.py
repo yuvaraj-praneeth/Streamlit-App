@@ -165,7 +165,7 @@ elif bmi > 18.5 and bmi < 25:
           st.write(diff)
 elif bmi > 25 and bmi < 40:
      cal_3 = 2300
-     if(cal_1 > total_calories):
+     if(cal_3 > total_calories):
           diff = cal_3 - total_calories
           st.write(diff)
      else:

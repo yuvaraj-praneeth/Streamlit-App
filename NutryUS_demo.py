@@ -135,4 +135,4 @@ if genre == 'Dinner':
   st.write('Dinner Calories = {}'.format(dinner_calories))
 
 print(calories)
-st.write('Total calories consumed today = {}'.format(total_calories))
+#st.write('Total calories consumed today = {}'.format(total_calories))

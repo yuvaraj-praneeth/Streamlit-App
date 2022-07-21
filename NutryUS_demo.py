@@ -129,5 +129,5 @@ elif genre == 'Dinner':
   dinner_calories = S1*calories_Jeera + S2*calories_Curd + S3*calories_Naan + S4*calories_Roti + S5*calories_Chapati + S6*calories_Panner_curry + S7*calories_Chicken_curry +S8*calories_Mutton_curry
   st.write('Dinner Calories = {}'.format(dinner_calories))
 
-total_calories = breakfast_calories + lunch_clories + donner_calories
+total_calories = breakfast_calories + lunch_clories + dinner_calories
 st.write('Total calories consumed today = {}'.format(total_calories))

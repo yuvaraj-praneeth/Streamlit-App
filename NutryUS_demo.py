@@ -8,8 +8,8 @@ genre = st.sidebar.selectbox(
      "Meal:",
      ('None','Breakfast','Lunch','Dinner'))
 ### Calculating BMI of a person
-weight = st.slider('Enter your weight in kg',1,150,step=0.1)
-height = st.slider('Enter your height in m',1,2.5,step=0.01)
+weight = st.slider('Enter your weight in kg',1.0,150.0,step=0.1)
+height = st.slider('Enter your height in m',1.0,2.5,step=0.01)
 bmi = (weight)/(height**2)
 ### Calories based on bmi
 if bmi == inf:

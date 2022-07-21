@@ -4,8 +4,8 @@ st.title('NutryUS')
 st.image('https://www.fredhutch.org/content/dam/www/research/divisions/public-health-sciences/nutrition-assessment/nutrition-dietary-data-gfb-2.jpg')
 st.header('Your new diet Dormitory Mother')
 st.text('Select your meal')
-#st.write("**Open the sidebar the type of meal on your left top corner to select **")
-#genre = st.sidebar.selectbox(
+st.write("**Open the sidebar the type of meal on your left top corner to select **")
+genre = st.sidebar.selectbox(
      "Meal:",
      ('None','Breakfast','Lunch','Dinner'))
 ### Calculating BMI of a person

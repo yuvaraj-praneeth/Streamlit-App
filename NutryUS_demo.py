@@ -13,12 +13,6 @@ st.set_page_config(
      }
  )
 
-
-
-with st.spinner('Wait for it...'):
-    time.sleep(5)
-st.success('Done!')
-
 my_bar = st.progress(0)
 for percent_complete in range(100):
      time.sleep(0.1)
@@ -50,7 +44,7 @@ elif bmi > 25 and bmi < 40:
 else:
      st.write('Input approriate height and weight')
 
-tab1, tab2, tab3 = st.tabs(["Breakfast", "Lunch", "Dinner"])
+tab1, tab2, tab3, tab4 = st.tabs(["Breakfast", "Lunch", "Dinner", "Total"])
      
 breakfast_calories, lunch_calories, dinner_calories = 0, 0, 0
 #st.write('**You selected:**', genre)
@@ -173,37 +167,38 @@ with tab3:
      dinner_calories = S1*calories_Jeera + S2*calories_Curd + S3*calories_Naan + S4*calories_Roti + S5*calories_Chapati + S6*calories_Panner_curry + S7*calories_Chicken_curry +S8*calories_Mutton_curry
   #calories.append(dinner_calories)
      st.write('Dinner Calories = {}'.format(dinner_calories))
+     
+with tab4:
+     total_calories = breakfast_calories + lunch_calories + dinner_calories
+     st.write('Total calories consumed today = {}'.format(total_calories))
 
-total_calories = breakfast_calories + lunch_calories + dinner_calories
-st.write('Total calories consumed today = {}'.format(total_calories))
-
-if bmi > 16.0 and bmi < 18.5:
-     cal_1 = 3000
-     if(cal_1 > total_calories):
-          diff = cal_1 - total_calories
-          st.write('Calories left to be consumed: ')
-          st.write(diff)
-     else:
-          diff = total_calories - cal_1
-          st.write('Extra calories taken: ')
-          st.write(diff)
-elif bmi > 18.5 and bmi < 25:
-     cal_2 = 2500
-     if(cal_2 > total_calories):
-          diff = cal_2 - total_calories
-          st.write('Calories left to be consumed: ')
-          st.write(diff)
-     else:
-          diff = total_calories - cal_2
-          st.write('Extra calories taken: ')
-          st.write(diff)
-elif bmi > 25 and bmi < 40:
-     cal_3 = 2300
-     if(cal_3 > total_calories):
-          diff = cal_3 - total_calories
-          st.write('Calories left to be consumed: ')
-          st.write(diff)
-     else:
-          diff = total_calories - cal_3
-          st.write('Extra calories taken: ')
-          st.write(diff)
+     if bmi > 16.0 and bmi < 18.5:
+          cal_1 = 3000
+          if(cal_1 > total_calories):
+               diff = cal_1 - total_calories
+               st.write('Calories left to be consumed: ')
+               st.write(diff)
+          else:
+               diff = total_calories - cal_1
+               st.write('Extra calories taken: ')
+               st.write(diff)
+     elif bmi > 18.5 and bmi < 25:
+          cal_2 = 2500
+          if(cal_2 > total_calories):
+               diff = cal_2 - total_calories
+               st.write('Calories left to be consumed: ')
+               st.write(diff)
+          else:
+               diff = total_calories - cal_2
+               st.write('Extra calories taken: ')
+               st.write(diff)
+     elif bmi > 25 and bmi < 40:
+          cal_3 = 2300
+          if(cal_3 > total_calories):
+               diff = cal_3 - total_calories
+               st.write('Calories left to be consumed: ')
+               st.write(diff)
+          else:
+               diff = total_calories - cal_3
+               st.write('Extra calories taken: ')
+               st.write(diff)

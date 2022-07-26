@@ -176,6 +176,9 @@ with tab4:
      
 with tab5:
      #Summary of all the data
+     st.write('Breakfast Calories = {}'.format(breakfast_calories))
+     st.write('Lunch Calories = {}'.format(lunch_calories))
+     st.write('Dinner Calories = {}'.format(dinner_calories))
      total_calories = breakfast_calories + lunch_calories + dinner_calories
      st.write('Total calories consumed today = {}'.format(total_calories))
 

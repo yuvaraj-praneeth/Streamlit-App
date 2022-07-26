@@ -29,10 +29,11 @@ st.header('Your new diet Dormitory Mother')
 #genre = st.sidebar.selectbox(
 #     "Meal:",
 #     ('None','Breakfast','Lunch','Dinner'))
-### Calculating BMI of a person
 
 tab1, tab2, tab3, tab4, tab5 = st.tabs(["bmi", "Breakfast", "Lunch", "Dinner", "Summary"])
-with tab 1:
+
+### Calculating BMI of a person
+with tab1:
      weight = st.slider('Enter your weight in kg',1.0,150.0,step=0.1)
      height = st.slider('Enter your height in m',1.0,2.5,step=0.01)
      bmi = (weight)/(height**2)
@@ -50,8 +51,9 @@ with tab 1:
           st.write('Input approriate height and weight')
      breakfast_calories, lunch_calories, dinner_calories = 0, 0, 0
 #st.write('**You selected:**', genre)
-#if genre == 'Breakfast':
+
 with tab2:
+     #if genre == 'Breakfast':
      st.title('BREAKFAST SECTION')
      breakfast_calories = 0
      st.write('Idly')
@@ -88,8 +90,9 @@ with tab2:
 
 # LUNCH SECTION ( To be edited )
 
-#if genre == 'Lunch':
+
 with tab3:
+     #if genre == 'Lunch':
      st.title('LUNCH SECTION')
      lunch_calories = 0
      st.text('Quantity is taken in terms of Bowls')
@@ -127,8 +130,9 @@ with tab3:
      
  # DINNER SECTION  (To be edited)
   
-#if genre == 'Dinner':
+
 with tab4:
+     #if genre == 'Dinner':
      st.title('DINNER SECTION')
      dinner_calories = 0
      st.text('Quantity is taken in terms of Bowls')
@@ -171,6 +175,7 @@ with tab4:
      st.write('Dinner Calories = {}'.format(dinner_calories))
      
 with tab5:
+     #Summary of all the data
      total_calories = breakfast_calories + lunch_calories + dinner_calories
      st.write('Total calories consumed today = {}'.format(total_calories))
 
@@ -204,3 +209,7 @@ with tab5:
                diff = total_calories - cal_3
                st.write('Extra calories taken: ')
                st.write(diff)
+     if st.button('Submit'):
+          st.write('Successfully submitted!')
+     else:
+          st.write('Didnot submit successfully')

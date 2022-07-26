@@ -1,3 +1,7 @@
+import streamlit as st
+import time
+import math as mt
+
 st.set_page_config(
      page_title="NutryUS",
      page_icon="😋",
@@ -9,9 +13,7 @@ st.set_page_config(
      }
  )
 
-import streamlit as st
-import time
-import math as mt
+
 
 with st.spinner('Wait for it...'):
     time.sleep(5)

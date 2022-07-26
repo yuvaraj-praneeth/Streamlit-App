@@ -30,28 +30,28 @@ st.header('Your new diet Dormitory Mother')
 #     "Meal:",
 #     ('None','Breakfast','Lunch','Dinner'))
 ### Calculating BMI of a person
-weight = st.slider('Enter your weight in kg',1.0,150.0,step=0.1)
-height = st.slider('Enter your height in m',1.0,2.5,step=0.01)
-bmi = (weight)/(height**2)
-### Calories based on bmi
-if bmi > 16.0 and bmi < 18.5:
-     cal_1 = 3000
-     st.write('Based on your BMI, you need to consume 3000 Calories per day')
-elif bmi > 18.5 and bmi < 25:
-     cal_2 = 2500
-     st.write('Based on your BMI, you need to consume 2500 Calories per day')
-elif bmi > 25 and bmi < 40:
-     cal_3 = 2300
-     st.write('Based on your BMI, you need to consume 2300 Calories per day')
-else:
-     st.write('Input approriate height and weight')
 
-tab1, tab2, tab3, tab4 = st.tabs(["Breakfast", "Lunch", "Dinner", "Total"])
-     
-breakfast_calories, lunch_calories, dinner_calories = 0, 0, 0
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["bmi", "Breakfast", "Lunch", "Dinner", "Summary"])
+with tab 1:
+     weight = st.slider('Enter your weight in kg',1.0,150.0,step=0.1)
+     height = st.slider('Enter your height in m',1.0,2.5,step=0.01)
+     bmi = (weight)/(height**2)
+### Calories based on bmi
+     if bmi > 16.0 and bmi < 18.5:
+          cal_1 = 3000
+          st.write('Based on your BMI, you need to consume 3000 Calories per day')
+     elif bmi > 18.5 and bmi < 25:
+          cal_2 = 2500
+          st.write('Based on your BMI, you need to consume 2500 Calories per day')
+     elif bmi > 25 and bmi < 40:
+          cal_3 = 2300
+          st.write('Based on your BMI, you need to consume 2300 Calories per day')
+     else:
+          st.write('Input approriate height and weight')
+     breakfast_calories, lunch_calories, dinner_calories = 0, 0, 0
 #st.write('**You selected:**', genre)
 #if genre == 'Breakfast':
-with tab1:
+with tab2:
      st.title('BREAKFAST SECTION')
      breakfast_calories = 0
      st.write('Idly')
@@ -89,7 +89,7 @@ with tab1:
 # LUNCH SECTION ( To be edited )
 
 #if genre == 'Lunch':
-with tab2:
+with tab3:
      st.title('LUNCH SECTION')
      lunch_calories = 0
      st.text('Quantity is taken in terms of Bowls')
@@ -128,7 +128,7 @@ with tab2:
  # DINNER SECTION  (To be edited)
   
 #if genre == 'Dinner':
-with tab3:
+with tab4:
      st.title('DINNER SECTION')
      dinner_calories = 0
      st.text('Quantity is taken in terms of Bowls')
@@ -170,7 +170,7 @@ with tab3:
   #calories.append(dinner_calories)
      st.write('Dinner Calories = {}'.format(dinner_calories))
      
-with tab4:
+with tab5:
      total_calories = breakfast_calories + lunch_calories + dinner_calories
      st.write('Total calories consumed today = {}'.format(total_calories))
 

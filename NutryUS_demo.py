@@ -215,4 +215,4 @@ with tab5:
      if st.button('Submit'):
           st.write('Successfully submitted!')
      else:
-          st.write('Didnot submit successfully')
+          st.write('Did not submit successfully')

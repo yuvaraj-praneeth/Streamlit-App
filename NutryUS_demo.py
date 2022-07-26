@@ -30,7 +30,7 @@ st.header('Your new diet Dormitory Mother')
 #     "Meal:",
 #     ('None','Breakfast','Lunch','Dinner'))
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs(["bmi", "Breakfast", "Lunch", "Dinner", "Summary"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["BMI calculation", "Breakfast", "Lunch", "Dinner", "Summary"])
 
 ### Calculating BMI of a person
 with tab1:

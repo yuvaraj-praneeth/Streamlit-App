@@ -4,7 +4,7 @@ import math as mt
 
 st.set_page_config(
      page_title="NutryUS",
-     page_icon="😋",
+     page_icon="🥗",
      layout="centered",
      menu_items={
          'Get Help': None,
